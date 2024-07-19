@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Maven.com</title>
+</head>
+<body>
+      <!-- navbar -->
+
+      <div class="nn" id="ndiv">
+        <header class="header mogra">
+
+            <!--logo-->
+            <div class="left">
+                <a href="/index.html" target="_blank"><p class="mogra" style="font-size: 18px;">MAVEN.</p></a>
+            </div>
+
+            <!--navbar-->
+            <div class="mid">
+                <ul class="navbarr" id="navbarr">
+                    <li><a href="/index.html" target="_blank" class="black-color">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="/services.html" target="_blank" class="dropbtn" id="ser" >Services</a>
+                        <div class="dropdown-content">
+                            <a href="/webdevelopment.html" class="mustpurple" target="_blank" style="text-decoration: underline;
+    color:#e148d8;">Web Development</a>
+                            <a href="/mobappdevelopment.html" target="_blank">Mobile App Development</a>
+                            <a href="/graphicdesigning.html" target="_blank">Graphic Designing</a>
+                        </div>
+                    </li>
+
+                    <li><a href="/product.html" target="_blank" class="black-color">Products</a></li>
+                    <li><a href="/internship.html" target="_blank" class="black-color">Internship</a></li>
+                    <li><a href="/courses.html" target="_blank" class="black-color">Courses</a></li>
+                    <li><a href="/about.html" target="_blank" class="black-color">About</a></li>
+                    <li><a href="/contact.html" target="_blank" class="black-color">Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-lightbulb" id="lighticon"></i></a></li>
+                </ul>
+                <div class="btn-menu" onclick="toggleNavbar()">
+                    &#9776;
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+      <!-- resume button -->
+
+      <form id="resume-form">
+        <label for=""><b style="font-size: 20px;">Drop Resume</b></label> <br>
+        <input type="file" id="file-input" accept=".pdf,.doc,.docx"> <br>
+        <input type="submit" class="submit-button">
+    </form>
+
+
+    <section style="margin-top: 30px;">
+    
+        <!-- Web Development -->
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated">
+                    <img src="/imgs/webdev1.png" class="img-fluid g1" alt="Web Development">
+                </div>
+    
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated">
+                    <h2 class="increase_sizeh2 mustpurple">We build websites</h2><br>
+                    <p class="increase_sizep">Today, every business should have a website.<br>
+                        No matter how small or large your business, having a website is a must-have at this time.<br>
+                        Having a website helps you to maintain your online presence.
+                    </p><br>
+                    <a href="/contact.html" target="_blank"><button class="button"><p class="whitemust button-text">Contact Us</p></button></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- E-Commerce Web Development -->
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated mt-3">
+                    <h2 class="increase_sizeh2 mustpurple">E-Commerce Web Development</h2><br>
+                    <p class="increase_sizep">Our talented web development team has years of experience building websites from small to large.
+                        We deliver projects with 100% user satisfaction.
+                        Whatever functionality you need for the web, we will implement it.
+                    </p><br>
+                    <a href="/contact.html" target="_blank"><button class="button"><p class="whitemust button-text">Contact Us</p></button></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated">
+                    <img src="/imgs/webdev2.gif" class="img-fluid g1" alt="E-Commerce Web Development">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Responsive and Mobile Friendly -->
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated">
+                    <img src="/imgs/webdev3.gif" class="img-fluid g1" alt="Responsive and Mobile Friendly">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated">
+                    <h2 class="increase_sizeh2 mustpurple">Responsive and Mobile Friendly</h2><br>
+                    <p class="increase_sizep">Mobile internet users have grown significantly and you can't ignore this huge audience.<br>
+                        Your websites must be responsive and mobile-friendly along with PC. After all, you don't want to lose mobile users.
+                    </p><br>
+                    <a href="/contact.html" target="_blank"><button class="button"><p class="whitemust button-text">Contact Us</p></button></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Professional and Modern Looks -->
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated mt-3">
+                    <h2 class="increase_sizeh2 mustpurple">Professional and Modern Looks</h2><br>
+                    <p class="increase_sizep">Our website designer and developer always give your website the best look that is perfect for this time.<br>
+                        The first thing to impress your website visitor is how beautifully your website is designed.
+                    </p><br>
+                    <a href="/contact.html" target="_blank"><button class="button"><p class="whitemust button-text">Contact Us</p></button></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 animated-section2 animate__animated">
+                    <img src="/imgs/g1.gif" class="img-fluid g1" alt="Professional and Modern Looks">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+
+    <section style="margin-top: 80px;">
+        <h1 style="text-align: center;">Technologies We Use For Web Development And Design</h1>
+        <div class="purple_shadow" style="background-color: rgb(238, 235, 235);">
+            <div class="container mt-5" style="padding-top: 15px;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi1.avif" class="img-fluid" alt="Technology 1">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi2.avif" class="img-fluid" alt="Technology 2">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi3.avif" class="img-fluid" alt="Technology 3">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi4.avif" class="img-fluid" alt="Technology 4">
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5" style="padding-bottom: 15px;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi5.avif" class="img-fluid" alt="Technology 5">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi6.avif" class="img-fluid" alt="Technology 6">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi7.png" class="img-fluid" alt="Technology 7" style="height: 100px; width: 100px;">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+                        <img src="imgs/webdevi8.png" class="img-fluid" alt="Technology 8" style="height: 100px; width: 130px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+     <!-- Footer -->
+<footer class="text-center text-lg-start text-muted mt-5 custom-footer animate__animated animated-section" style="margin-top: 80px;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background: transparent;">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <p style="font-size: 20px;">Get connected with us on social networks:</p>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/" class="me-4 text-mustblue mustblue" target="_blank" style="text-decoration: none;">
+          <i class="fab fa-facebook-f fa-2x"x></i>
+        </a>
+        </a>
+        <a style="text-decoration: none;" href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=AdF4I76KbtJ8kXcHx3ZAL02vksXS6FEgrp8PsaGPQoRS99ZCKXqy3Ld1_HkhoUKwO460UVRjs-6ZSg&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="me-4 text-mustblue mustblue" target="_blank">
+          <i class="fab fa-google fa-2x"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://www.instagram.com/" class="me-4 text-mustblue mustblue" target="_blank">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://www.linkedin.com/" class="me-4 text-mustblue mustblue" target="_blank">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a style="text-decoration: none;" href="https://github.com/" class="me-4 text-mustblue mustblue" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="whitebackground purple_shadow" id="footerr">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h2 class="text-uppercase fw-bold mb-4 mogra">
+              MAVEN.
+            </h2>
+            <p>
+              Your partner in technological growth and innovation.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4">
+              Services
+            </h4>
+            <p>
+              <a href="/webdevelopment.html" target="_blank" class="text-reset" style="text-decoration: none;">Web Development</a>
+            </p>
+            <p>
+              <a href="/mobappdevelopment.html" target="_blank" class="text-reset" style="text-decoration: none;">Mob-App Development</a>
+            </p>
+            <p>
+              <a href="/graphicdesigning.html" target="_blank" class="text-reset" style="text-decoration: none;">Graphic Designing</a>
+            </p>
+           
+          </div>
+   
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h4 class="text-uppercase fw-bold mb-4">Contact</h4>
+            <p><i class="fas fa-home me-3"></i> Gulistan-e-johar, Karachi, Pakistan.</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              maven@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3302378544</p>
+          
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+  
+  </footer>
+ 
+
+  <script>
+    /*toggle navbar*/
+    function toggleNavbar() {
+        var navbar = document.getElementById('navbarr');
+        navbar.classList.toggle('active');
+    }
+
+    $(document).ready(function(){
+
+        /*light mode*/
+
+        $('#lighticon').click(function(){
+            if ($(this).hasClass('custom-color')) {
+
+                $(this).removeClass('custom-color');
+
+                $('#ndiv').removeClass('nn2');
+                $('#ndiv').addClass('nn');
+                $('a').removeClass('white-color');
+                $('a').addClass('black-color');
+                $('#ser').css("color","black");
+                $('p').css("color","black");
+                $('.g1').removeClass('purple_shadow');
+                $('h1').css("color","black");
+                $('h2').css("color","black");
+                $('h4').css("color","black");
+                $('body').removeClass('dark-color');
+                $('#footerr').addClass('whitebackground');
+                $('#footerr').removeClass('purplebackground');
+                $('#footerr').removeClass('blue_shadow');
+                $('#footerr').addClass('purple_shadow');
+
+                $('.whitemust').css("color","white");
+                $('.blackmust').css("color","black");
+
+                /*must purple and blue*/
+                $('.mustpurple').css("color","#E148D8");
+                    $('.mustblue').css("color","#0D6EFD");
+
+                
+                
+
+                $('#ser').hover(
+    function() {
+        $(this).css("color", "#E148D8");
+    },
+    function() {
+        $(this).css("color", "black"); 
+    }
+);
+                
+              /*dark mode*/
+
+            } else {
+
+                $(this).addClass('custom-color');
+
+                $('#ndiv').removeClass('nn');
+                $('#ndiv').addClass('nn2');
+                $('a').removeClass('black-color');
+                $('a').addClass('white-color');
+                $('#ser').css("color","white");
+                $('p').css("color","white");
+                $('.g1').addClass('purple_shadow');
+                $('h1').css("color","white");
+                $('h2').css("color","white");
+                $('h4').css("color","white");
+                $('body').addClass('dark-color');
+                $('#footerr').remove('whitebackground');
+                $('#footerr').addClass('purplebackground');
+                $('#footerr').addClass('blue_shadow');
+                $('#footerr').removeClass('purple_shadow');
+
+                /*must purple and blue*/
+                $('.mustpurple').css("color","#E148D8");
+                $('.blackmust').css("color","black");
+                $('.mustblue').css("color","#0D6EFD");
+
+                $('#ser').hover(
+    function() {
+        $(this).css("color", "#E148D8");
+    },
+    function() {
+        $(this).css("color", "white"); 
+    }
+);
+                
+            }
+
+            
+            
+
+            
+        });
+
+
+
+/*increase text size*/
+$('.increase_sizeh2').hover(
+    function() {
+        $('.increase_sizeh2').css("font-size","3em")
+    },
+    function() {
+        $('.increase_sizeh2').css("font-size","2em")
+    }
+);
+        
+
+$('.increase_sizeh4').hover(
+    function() {
+        $('.increase_sizeh4').css("font-size","2em")
+    },
+    function() {
+        $('.increase_sizeh4').css("font-size","1.5em")
+    }
+);
+
+
+$('.increase_sizep').hover(
+    function() {
+        $('.increase_sizep').css("font-size","20px")
+    },
+    function() {
+        $('.increase_sizep').css("font-size","16px")
+    }
+);
+    
+    
+
+       
+    });
+
+    /*animate when scroll*/
+    
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const sections = document.querySelectorAll('.animated-section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__flip');
+            } else {
+                entry.target.classList.remove('animate__flip');
+            }
+        });
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const sections = document.querySelectorAll('.animated-section2');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__fadeIn');
+            } else {
+                entry.target.classList.remove('animate__fadeIn');
+            }
+        });
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+// resume
+
+document.getElementById('resume-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    const fileInput = document.getElementById('file-input');
+    const file = fileInput.files[0];
+
+    if (file) {
+        alert('Your resume has been submitted');
+      
+    } else {
+        alert('Please select a file before submitting');
+    }
+});
+    </script>
+
+
+
+</body>
+</html>
+</body>
+</html>
